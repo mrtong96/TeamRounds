@@ -10,8 +10,8 @@ def main():
     entrants = map(lambda x: [x[0], int(x[1])], lines)
 
     # can change number params here to get better results at cost of computation speed
-    #data = run_HC_trials(entrants, 100, 200)
-    data = run_HC_trials([(i, i) for i in range(100)], 100, 200)
+    data = run_HC_trials(entrants, 100, 200)
+    #data = run_HC_trials([(i, i) for i in range(100)], 100, 200)
     for el in data:
         print el
 
